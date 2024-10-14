@@ -15,8 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Step 1 - Check Repo..
-          run: actions/checkout@v4
-
+          uses: actions/checkout@v4
         - name: Step 2 - Set USER_1 as USERNAME
           run: |
              echo "USERNAME=$USER_1" >> $GITHUB_ENV
